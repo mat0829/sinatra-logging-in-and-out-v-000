@@ -7,10 +7,15 @@
   </head>
   <body id="page-top">
     <% if Helpers.is_logged_in?(session) %>
+<<<<<<< HEAD
     <h1>Welcome <%= Helpers.current_user(session).username %></h1>
     <h3>Your Balance: <%= Helpers.current_user(session).balance %></h3>
     
     <h4><a href="/logout">Log Out</a></h4>
     <% end %>
+=======
+    <h1>Welcome <%Helpers.current_user(session).username</h1>
+
+>>>>>>> 4e55f31f65d8aac44dfb56463ea4672e0ba911b6
   </body>
 </html>
